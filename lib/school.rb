@@ -18,7 +18,7 @@ class School
 
   def sort
     ordered = {}
-    roster.collect{|grade, name|
+    roster.map{|grade, name|
       ordered[grade] = name.sort
     }
   end
