@@ -16,5 +16,9 @@ class School
     roster[grade]
   end
 
-  
+  def sort
+    roster[grade].collect{|grade, name|
+      grade.sort
+    }
+  end
 end
